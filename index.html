@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+<title>Mighty Kingdom Funerals | Dignified Funeral Services in South Africa</title>
+<meta name="title" content="Mighty Kingdom Funerals | Dignified Funeral Services in South Africa">
+<meta name="description" content="Providing compassionate, professional funeral services including burial policies, tombstones, and full funeral support across South Africa.">
+
+<!-- Favicon -->
+<link rel="icon" href="images/logo.png" type="image/png" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.yourwebsite.co.za/">
+<meta property="og:title" content="Mighty Kingdom Funerals | Dignified Funeral Services">
+<meta property="og:description" content="Providing compassionate, professional funeral services including burial policies, tombstones, and full funeral support across South Africa.">
+<meta property="og:image" content="https://www.yourwebsite.co.za/images/logo.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://www.yourwebsite.co.za/">
+<meta name="twitter:title" content="Mighty Kingdom Funerals | Dignified Funeral Services">
+<meta name="twitter:description" content="Providing compassionate, professional funeral services including burial policies, tombstones, and full funeral support across South Africa.">
+<meta name="twitter:image" content="https://www.yourwebsite.co.za/images/logo.png">
+
+<!-- Responsive Meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- SwiperJS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        :root {
+            --dark-green: #1a3e2d;
+            --gradient-green: linear-gradient(135deg, #1a3e2d 0%, #2d6a4f 100%);
+            --yellow: #f9c74f;
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: var(--gradient-green);
+        }
+        
+        .tombstone-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .tombstone-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .policy-card {
+            transition: all 0.3s ease;
+        }
+        
+        .policy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .gallery-item {
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .gallery-item img {
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--yellow);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+        
+        .hero-overlay {
+            background: rgba(0,0,0,0.5);
+        }
+        
+        .glow {
+            box-shadow: 0 0 15px rgba(249, 199, 79, 0.5);
+        }
+        
+        .glow:hover {
+            box-shadow: 0 0 25px rgba(249, 199, 79, 0.8);
+        }
+
+        .bg-section {
+            background-image: url('images/hero1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .bg-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .bg-section > * {
+            position: relative;
+            z-index: 2;
+        }
+
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full z-50 gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/logo.png" alt="Mighty Kingdom Funerals Logo" class="h-16 mr-3">
+                <h1 class="text-xl md:text-2xl font-bold">Mighty Kingdom Funerals</h1>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="#home" class="nav-link hover:text-yellow-300 transition">Home</a></li>
+                    <li><a href="#services" class="nav-link hover:text-yellow-300 transition">Services</a></li>
+                    <li><a href="#policies" class="nav-link hover:text-yellow-300 transition">Policies</a></li>
+                    <li><a href="#gallery" class="nav-link hover:text-yellow-300 transition">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link hover:text-yellow-300 transition">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-2xl" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden gradient-bg py-4 px-4">
+            <ul class="flex flex-col space-y-4">
+                <li><a href="#home" class="nav-link hover:text-yellow-300 transition">Home</a></li>
+                <li><a href="#services" class="nav-link hover:text-yellow-300 transition">Services</a></li>
+                <li><a href="#policies" class="nav-link hover:text-yellow-300 transition">Policies</a></li>
+                <li><a href="#gallery" class="nav-link hover:text-yellow-300 transition">Gallery</a></li>
+                <li><a href="#contact" class="nav-link hover:text-yellow-300 transition">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+<section id="home" class="relative h-screen overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <div class="w-full h-full">
+      <!-- Hero Slide Container -->
+      <div class="swiper-container w-full h-full">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-cover bg-center w-full h-full" style="background-image: url('images/hero1.jpg');"></div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide bg-cover bg-center w-full h-full" style="background-image: url('images/hero2.jpg');"></div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-cover bg-center w-full h-full" style="background-image: url('images/hero3.jpg');"></div>
+        </div>
+      </div>
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    </div>
+  </div>
+
+  <!-- Hero Content -->
+  <div class="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-white text-center">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 fade-in">Dignified Funeral Services</h1>
+    <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto fade-in">Compassionate care when you need it most. We honor life with dignity and respect.</p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4 fade-in">
+      <a href="#contact" class="bg-yellow-500 hover:bg-yellow-600 text-dark-green font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 glow">Contact Us</a>
+      <a href="#policies" class="bg-transparent border-2 border-white hover:bg-white hover:text-dark-green font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">Our Policies</a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- About Section -->
+<section class="py-16 bg-[#fefae0] font-[Poppins,sans-serif]">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center">
+      
+      <!-- Text Content -->
+      <div class="md:w-1/2 mb-10 md:mb-0 md:pr-8">
+        <h2 class="text-4xl font-extrabold text-[#1a3e2d] mb-6 animate-fade-up">About Mighty Kingdom Funerals</h2>
+        <p class="text-gray-800 mb-4 leading-relaxed animate-fade-up delay-100">
+          Mighty Kingdom Funerals is committed to providing compassionate and dignified funeral services to families during their most difficult times.
+        </p>
+        <p class="text-gray-800 mb-4 leading-relaxed animate-fade-up delay-200">
+          With years of experience in the industry, we understand the importance of honoring your loved ones with respect and care.
+        </p>
+        <p class="text-gray-800 leading-relaxed animate-fade-up delay-300">
+          Our team is dedicated to guiding you through every step of the process, ensuring that your needs are met with professionalism and empathy.
+        </p>
+      </div>
+
+      <!-- Image -->
+      <div class="md:w-1/2 rounded-lg overflow-hidden shadow-2xl">
+        <img src="images/bg.jpg" alt="Funeral Service" class="w-full h-auto object-cover rounded-lg animate-zoom-in">
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+    <!-- Services Section -->
+<section id="services" class="py-16 gradient-bg text-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <!-- Service Card -->
+      <div class="service-card group bg-white rounded-2xl p-6 text-dark-green shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-1">
+        <div class="text-5xl text-yellow-500 mb-4 transition duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(249,199,79,0.7)]">
+          <i class="fas fa-hand-holding-usd"></i>
+        </div>
+        <h4 class="text-xl font-bold mb-3 text-[#1a3e2d]">Cash Funerals</h4>
+        <p class="text-gray-700">Flexible payment options for immediate funeral arrangements without the need for a policy.</p>
+      </div>
+
+      <!-- Burial Policies -->
+      <div class="service-card group bg-white rounded-2xl p-6 text-dark-green shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-1">
+        <div class="text-5xl text-yellow-500 mb-4 transition duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(249,199,79,0.7)]">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h4 class="text-xl font-bold mb-3 text-[#1a3e2d]">Burial Policies</h4>
+        <p class="text-gray-700">Comprehensive burial policies to ensure your loved ones are taken care of when the time comes.</p>
+      </div>
+
+      <!-- Tombstones -->
+      <div class="service-card group bg-white rounded-2xl p-6 text-dark-green shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-1">
+        <div class="text-5xl text-yellow-500 mb-4 transition duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(249,199,79,0.7)]">
+          <i class="fas fa-cross"></i>
+        </div>
+        <h4 class="text-xl font-bold mb-3 text-[#1a3e2d]">Tombstones</h4>
+        <p class="text-gray-700">Beautiful, custom-designed tombstones to honor and remember your loved ones.</p>
+      </div>
+
+      <!-- Full Service -->
+      <div class="service-card group bg-white rounded-2xl p-6 text-dark-green shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-1">
+        <div class="text-5xl text-yellow-500 mb-4 transition duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(249,199,79,0.7)]">
+          <i class="fas fa-hands"></i>
+        </div>
+        <h4 class="text-xl font-bold mb-3 text-[#1a3e2d]">Full Funeral Package</h4>
+        <p class="text-gray-700">From mortuary services to grave preparation, we handle all aspects with care and respect.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Tombstone Showcase -->
+<section class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12 text-dark-green">Tombstones for Sale & Policy Benefits</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Tombstone 1 -->
+      <div class="tombstone-card bg-white rounded-lg overflow-hidden shadow-lg">
+        <img src="images/tomb1.jpg" alt="Classic Tombstone" class="w-full aspect-[4/3] object-contain bg-white">
+        <div class="p-6">
+          <h4 class="text-xl font-bold mb-2 text-[#2d6a4f]">Classic Granite</h4>
+          <p class="text-gray-700 mb-4">Elegant and timeless granite tombstone with engraved lettering.</p>
+          <button class="border border-yellow-400 text-yellow-500 bg-white hover:bg-dark-green hover:text-[#2d6a4f] py-2 px-4 rounded transition duration-300">
+  View Options
+</button>
+        </div>
+      </div>
+
+      <!-- Tombstone 2 -->
+      <div class="tombstone-card bg-white rounded-lg overflow-hidden shadow-lg">
+        <img src="images/tomb2.jpg" alt="Modern Tombstone" class="w-full aspect-[4/3] object-contain bg-white">
+        <div class="p-6">
+          <h4 class="text-xl font-bold mb-2 text-[#2d6a4f]">Modern Design</h4>
+          <p class="text-gray-700 mb-4">Contemporary tombstone with sleek lines and customizable features.</p>
+          <button class="border border-yellow-400 text-yellow-500 bg-white hover:bg-dark-green hover:text-[#2d6a4f] py-2 px-4 rounded transition duration-300">
+  View Options
+</button>
+        </div>
+      </div>
+
+      <!-- Tombstone 3 -->
+      <div class="tombstone-card bg-white rounded-lg overflow-hidden shadow-lg">
+        <img src="images/tomb3.jpg" alt="Custom Tombstone" class="w-full aspect-[4/3] object-contain bg-white">
+        <div class="p-6">
+          <h4 class="text-xl font-bold mb-2 text-[#2d6a4f]">Custom Memorial</h4>
+          <p class="text-gray-700 mb-4">Personalized tombstone designed to reflect your loved one's unique life.</p>
+          <button class="border border-yellow-400 text-yellow-500 bg-white hover:bg-dark-green hover:text-[#2d6a4f] py-2 px-4 rounded transition duration-300">
+  View Options
+</button>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Policies Section -->
+    <section id="policies" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-dark-green">Our Burial Policies</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Policy 1 -->
+                <div class="policy-card bg-gray-100 rounded-lg p-6 border-l-4 border-yellow-500 shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-3 text-dark-green">MK004 Policy</h3>
+                    <p class="text-gray-700 mb-2"><strong>Coverage:</strong> Main Member + 5 Extended Members</p>
+                    <p class="text-gray-700 mb-2"><strong>Monthly Premium:</strong> R130.00</p>
+                    <p class="text-gray-700 mb-2"><strong>Age Limit:</strong> 0–64 years</p>
+                    <div class="mt-4">
+                        <button class="text-dark-green font-semibold hover:text-yellow-600 transition">View Benefits →</button>
+                    </div>
+                </div>
+                
+                <!-- Policy 2 -->
+                <div class="policy-card bg-gray-100 rounded-lg p-6 border-l-4 border-yellow-500 shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-3 text-dark-green">MK005 Policy</h3>
+                    <p class="text-gray-700 mb-2"><strong>Coverage:</strong> Main Member + 9 Extended Members</p>
+                    <p class="text-gray-700 mb-2"><strong>Monthly Premium:</strong> R180.00</p>
+                    <p class="text-gray-700 mb-2"><strong>Age Limit:</strong> 0–64 years</p>
+                    <div class="mt-4">
+                        <button class="text-dark-green font-semibold hover:text-yellow-600 transition">View Benefits →</button>
+                    </div>
+                </div>
+                
+                <!-- Policy 3 -->
+                <div class="policy-card bg-gray-100 rounded-lg p-6 border-l-4 border-yellow-500 shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-3 text-dark-green">Extended MK005</h3>
+                    <p class="text-gray-700 mb-2"><strong>Coverage:</strong> Main Member + 10 Extended Members</p>
+                    <p class="text-gray-700 mb-2"><strong>Monthly Premium:</strong> R250.00</p>
+                    <p class="text-gray-700 mb-2"><strong>Age Limit:</strong> 65–74 years</p>
+                    <div class="mt-4">
+                        <button class="text-dark-green font-semibold hover:text-yellow-600 transition">View Benefits →</button>
+                    </div>
+                </div>
+                
+                <!-- Policy 4 -->
+                <div class="policy-card bg-gray-100 rounded-lg p-6 border-l-4 border-yellow-500 shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-3 text-dark-green">Pensioner's Policy</h3>
+                    <p class="text-gray-700 mb-2"><strong>Coverage:</strong> Main Member + Spouse</p>
+                    <p class="text-gray-700 mb-2"><strong>Monthly Premium:</strong> R130.00</p>
+                    <p class="text-gray-700 mb-2"><strong>Age Limit:</strong> No Limit</p>
+                    <div class="mt-4">
+                        <button class="text-dark-green font-semibold hover:text-yellow-600 transition">View Benefits →</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Benefits Section -->
+            <div class="bg-[#2d6a4f] text-white rounded-lg p-8 shadow-xl">
+                <h3 class="text-2xl font-bold mb-6 text-yellow-400">Policy Benefits</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="flex items-start">
+                        <div class="text-yellow-400 mr-3 mt-1">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <p>Repatriation services</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-yellow-400 mr-3 mt-1">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <p>Quarter-view casket</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-yellow-400 mr-3 mt-1">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <p>Hearse service</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-yellow-400 mr-3 mt-1">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <p>Funeral programs</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-yellow-400 mr-3 mt-1">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <p>Tent & chairs</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-yellow-400 mr-3 mt-1">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <p>Grocery pack</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-yellow-400 mr-3 mt-1">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <p>Refreshments</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-yellow-400 mr-3 mt-1">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <p>Grave marker</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-yellow-400 mr-3 mt-1">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <p>Mortuary services (free storage)</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-yellow-400 mr-3 mt-1">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <p>Delivery of deceased to burial site</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Terms and Conditions -->
+<div class="mt-12 bg-white rounded-lg p-8 shadow-xl border border-gray-200">
+    <h3 class="text-3xl font-bold mb-8 text-dark-green text-center">Terms & Conditions</h3>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Item -->
+        <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+            <div class="text-yellow-500 text-2xl mr-4 mt-1">
+                <i class="fas fa-id-card-alt"></i>
+            </div>
+            <p><strong>Eligibility:</strong> The main member must be between 18 and 64 years old.</p>
+        </div>
+
+        <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+            <div class="text-yellow-500 text-2xl mr-4 mt-1">
+                <i class="fas fa-money-check-alt"></i>
+            </div>
+            <p><strong>Payout Limit:</strong> If Mighty Kingdom Funerals fails to operate in the country, a payout of R1600 will be made.</p>
+        </div>
+
+        <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+            <div class="text-yellow-500 text-2xl mr-4 mt-1">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <p><strong>Full Disclosure:</strong> All information must be disclosed truthfully when joining.</p>
+        </div>
+
+        <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+            <div class="text-yellow-500 text-2xl mr-4 mt-1">
+                <i class="fas fa-clock"></i>
+            </div>
+            <p><strong>Waiting Period:</strong> There is a 6-month waiting period before activation.</p>
+        </div>
+
+        <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+            <div class="text-yellow-500 text-2xl mr-4 mt-1">
+                <i class="fas fa-coins"></i>
+            </div>
+            <p><strong>Joining Fee:</strong> A once-off joining fee of R100 is required.</p>
+        </div>
+
+        <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+            <div class="text-yellow-500 text-2xl mr-4 mt-1">
+                <i class="fas fa-ban"></i>
+            </div>
+            <p><strong>Cancellation:</strong> The policy is canceled if the main member passes away.</p>
+        </div>
+
+        <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+            <div class="text-yellow-500 text-2xl mr-4 mt-1">
+                <i class="fas fa-truck-moving"></i>
+            </div>
+            <p><strong>Transportation Fee:</strong> R8/km for delivery outside Limpopo, Gauteng, or Mpumalanga.</p>
+        </div>
+
+        <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+            <div class="text-yellow-500 text-2xl mr-4 mt-1">
+                <i class="fas fa-pause-circle"></i>
+            </div>
+            <p><strong>Suspension:</strong> Policy is suspended if premiums are not paid.</p>
+        </div>
+
+        <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+            <div class="text-yellow-500 text-2xl mr-4 mt-1">
+                <i class="fas fa-calendar-alt"></i>
+            </div>
+            <p><strong>Monthly Payments:</strong> Premiums must be paid by the 1st of each month.</p>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+<section id="gallery" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12 text-dark-green">Our Gallery</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+      <!-- Gallery Item 1 -->
+      <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+        <img src="images/show3 (2).jpg" alt="Our Team" class="w-full aspect-[4/3] object-contain bg-white">
+        <div class="p-4">
+          <h3 class="font-semibold text-dark-green">Our Dedicated Team</h3>
+        </div>
+      </div>
+
+      <!-- Gallery Item 2 -->
+      <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+        <img src="images/show3.jpg" alt="Funeral Service" class="w-full aspect-[4/3] object-contain bg-white">
+        <div class="p-4">
+          <h3 class="font-semibold text-dark-green">Dignified Services</h3>
+        </div>
+      </div>
+
+      <!-- Gallery Item 3 -->
+      <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+        <img src="images/show2.jpg" alt="Tombstone" class="w-full aspect-[4/3] object-contain bg-white">
+        <div class="p-4">
+          <h3 class="font-semibold text-dark-green">Memorial Work</h3>
+        </div>
+      </div>
+
+      <!-- Gallery Item 4 -->
+      <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+        <img src="images/tomb2.jpg" alt="Tombstone Design" class="w-full aspect-[4/3] object-contain bg-white">
+        <div class="p-4">
+          <h3 class="font-semibold text-dark-green">Custom Designs</h3>
+        </div>
+      </div>
+
+      <!-- Gallery Item 5 -->
+      <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+        <img src="images/show5.jpg" alt="Funeral Flowers" class="w-full aspect-[4/3] object-contain bg-white">
+        <div class="p-4">
+          <h3 class="font-semibold text-dark-green">Floral Arrangements</h3>
+        </div>
+      </div>
+
+      <!-- Gallery Item 6 -->
+      <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+        <img src="images/show4.jpg" alt="Team Meeting" class="w-full aspect-[4/3] object-contain bg-white">
+        <div class="p-4">
+          <h3 class="font-semibold text-dark-green">Professional Team</h3>
+        </div>
+      </div>
+
+      <!-- Gallery Item 7 -->
+      <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+        <img src="images/show6.jpg" alt="Service" class="w-full aspect-[4/3] object-contain bg-white">
+        <div class="p-4">
+          <h3 class="font-semibold text-dark-green">Compassionate Care</h3>
+        </div>
+      </div>
+
+      <!-- Gallery Item 8 -->
+      <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+        <img src="images/tomb3.jpg" alt="Memorial" class="w-full aspect-[4/3] object-contain bg-white">
+        <div class="p-4">
+          <h3 class="font-semibold text-dark-green">Lasting Memorials</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section with bg.jpg -->
+    <section id="contact" class="bg-section text-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6 text-yellow-400">Get in Touch</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-yellow-400 mr-4 text-xl mt-1"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4 class="font-bold mb-1">Contact Numbers</h4>
+                                <p>Ms. Patricia Mathebula: <a href="tel:0818869702" class="hover:text-yellow-300 transition">081 886 9702</a></p>
+                                <p>General: <a href="tel:0822195516" class="hover:text-yellow-300 transition">082 219 5516</a> / <a href="tel:0795269135" class="hover:text-yellow-300 transition">079 526 9135</a></p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-400 mr-4 text-xl mt-1"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h4 class="font-bold mb-1">Office Hours</h4>
+                                <p>Monday–Friday: 08:00–16:00</p>
+                                <p>Saturday: 08:00–12:00</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-400 mr-4 text-xl mt-1"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4 class="font-bold mb-1">Physical Address</h4>
+                                <p>No. 1004, Next to Mayindiv, Ximhungwe Workshop</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-400 mr-4 text-xl mt-1"><i class="fas fa-university"></i></div>
+                            <div>
+                                <h4 class="font-bold mb-1">Banking Details</h4>
+                                <p><strong>Account Holder:</strong> Mighty Kingdom Funerals</p>
+                                <p><strong>Bank:</strong> FNB (First National Bank)</p>
+                                <p><strong>Account Number:</strong> 62871678284</p>
+                                <p><strong>Branch Code:</strong> 200609</p>
+                                <p><strong>Branch Name:</strong> Jorrissen Street</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6 text-yellow-400">Send Us a Message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 text-white">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 text-white">
+                        </div>
+                        <div>
+                            <label for="phone" class="block mb-1">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 text-white">
+                        </div>
+                        <div>
+                            <label for="subject" class="block mb-1">Subject</label>
+                            <select id="subject" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 text-white">
+                                <option value="">Select a subject</option>
+                                <option value="policy">Policy Inquiry</option>
+                                <option value="service">Service Inquiry</option>
+                                <option value="tombstone">Tombstone Inquiry</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 text-white"></textarea>
+                        </div>
+                        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-dark-green font-bold py-3 px-6 rounded-lg transition duration-300">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-6 text-dark-green">Our Location</h2>
+            <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3201.059547165742!2d31.07614617491789!3d-24.84202370988673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec28fb4da540469%3A0x8fa87fa27d79b6d6!2sMighty%20Kingdom%20Funerals!5e1!3m2!1sen!2sza!4v1752065143921!5m2!1sen!2sza"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+<footer class="bg-gray-900 text-white pt-12 pb-8 relative">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      
+      <!-- Logo + Description -->
+      <div>
+        <div class="flex items-center mb-4">
+          <img src="images/logo.png" alt="Mighty Kingdom Funerals Logo" class="h-12 mr-3">
+          <h2 class="text-xl font-bold">Mighty Kingdom Funerals</h2>
+        </div>
+        <p class="text-gray-400">Dignified services with compassion.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="font-semibold text-yellow-400 mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#home" class="hover:text-yellow-400 transition">Home</a></li>
+          <li><a href="#services" class="hover:text-yellow-400 transition">Services</a></li>
+          <li><a href="#policies" class="hover:text-yellow-400 transition">Policies</a></li>
+          <li><a href="#gallery" class="hover:text-yellow-400 transition">Gallery</a></li>
+          <li><a href="#contact" class="hover:text-yellow-400 transition">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Links -->
+      <div>
+        <h3 class="font-semibold text-yellow-400 mb-4">Follow Us</h3>
+        <div class="flex space-x-6 text-2xl">
+          <a href="https://www.facebook.com/profile.php?id=100087009226034#" class="text-gray-400 hover:text-yellow-400 transition">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/27714319306" class="text-gray-400 hover:text-yellow-400 transition">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-yellow-400 transition">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-yellow-400 transition">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400 text-sm">
+      <p>&copy; 2023 Mighty Kingdom Funerals. All rights reserved.</p>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/27714319306" target="_blank" class="fixed bottom-5 right-5 z-50 flex items-center bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">
+    <i class="fab fa-whatsapp text-2xl mr-2"></i>
+    <span class="font-medium">How can we help?</span>
+  </a>
+</footer>
+
+
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Scroll Reveal Animation
+        ScrollReveal().reveal('.service-card', {
+            delay: 200,
+            distance: '20px',
+            origin: 'bottom',
+            interval: 100,
+            easing: 'cubic-bezier(0.5, 0, 0, 1)'
+        });
+        
+        ScrollReveal().reveal('.tombstone-card', {
+            delay: 200,
+            distance: '20px',
+            origin: 'bottom',
+            interval: 100,
+            easing: 'cubic-bezier(0.5, 0, 0, 1)'
+        });
+        
+        ScrollReveal().reveal('.policy-card', {
+            delay: 200,
+            distance: '20px',
+            origin: 'bottom',
+            interval: 100,
+            easing: 'cubic-bezier(0.5, 0, 0, 1)'
+        });
+        
+        ScrollReveal().reveal('.gallery-item', {
+            delay: 200,
+            distance: '20px',
+            origin: 'bottom',
+            interval: 100,
+            easing: 'cubic-bezier(0.5, 0, 0, 1)'
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+  const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    effect: 'fade',
+    speed: 1000,
+  });
+</script>
+
+</body>
+</html>
