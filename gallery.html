@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Mighty Kingdom Funerals</title>
+  <meta name="description" content="View our gallery of funeral services, tombstones, team, and videos. See how we honor life with dignity.">
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --dark-green: #1a3e2d;
+      --yellow: #f9c74f;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #1a3e2d 0%, #2d6a4f 100%);
+    }
+    .filter-btn.active {
+      background-color: var(--yellow);
+      color: var(--dark-green);
+    }
+    .gallery-item {
+      display: none;
+    }
+    .gallery-item.show {
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full z-50 gradient-bg text-white shadow-lg">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="images/logo.png" alt="Logo" class="h-12 mr-3">
+        <h1 class="text-xl font-bold">Mighty Kingdom Funerals</h1>
+      </div>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="hover:text-yellow-300 transition">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-300 transition">About</a></li>
+          <li><a href="plans.html" class="hover:text-yellow-300 transition">Plans</a></li>
+          <li><a href="payments.html" class="hover:text-yellow-300 transition">Payments</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-300 transition">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="md:hidden text-2xl" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden gradient-bg py-4 px-4">
+      <ul class="flex flex-col space-y-4">
+        <li><a href="index.html" class="hover:text-yellow-300 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-yellow-300 transition">About</a></li>
+        <li><a href="plans.html" class="hover:text-yellow-300 transition">Plans</a></li>
+        <li><a href="payments.html" class="hover:text-yellow-300 transition">Payments</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-300 transition">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="gradient-bg text-white py-20 mt-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-4">Our Gallery</h2>
+      <p class="text-lg max-w-2xl mx-auto">Explore our services, tombstones, team, decorations, charity work, and more.</p>
+    </div>
+  </section>
+
+  <!-- Filter Buttons -->
+  <section class="py-8 bg-white">
+    <div class="container mx-auto px-4 flex flex-wrap justify-center gap-4">
+      <button class="filter-btn active px-4 py-2 rounded-full border border-dark-green text-dark-green" data-filter="all">All</button>
+      <button class="filter-btn px-4 py-2 rounded-full border border-dark-green text-dark-green" data-filter="team">Team</button>
+      <button class="filter-btn px-4 py-2 rounded-full border border-dark-green text-dark-green" data-filter="office">Office</button>
+      <button class="filter-btn px-4 py-2 rounded-full border border-dark-green text-dark-green" data-filter="field">Field Work</button>
+      <button class="filter-btn px-4 py-2 rounded-full border border-dark-green text-dark-green" data-filter="deco">Decorations</button>
+      <button class="filter-btn px-4 py-2 rounded-full border border-dark-green text-dark-green" data-filter="charity">Charity</button>
+      <button class="filter-btn px-4 py-2 rounded-full border border-dark-green text-dark-green" data-filter="cars">Cars</button>
+      <button class="filter-btn px-4 py-2 rounded-full border border-dark-green text-dark-green" data-filter="tombstones">Tombstones</button>
+      <button class="filter-btn px-4 py-2 rounded-full border border-dark-green text-dark-green" data-filter="work">Funeral Work</button>
+      <button class="filter-btn px-4 py-2 rounded-full border border-dark-green text-dark-green" data-filter="videos">Videos</button>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+<section class="py-12 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="gallery-grid">
+
+      <!-- Team Members -->
+      <div class="gallery-item show team"><a href="images/team1.jpg" class="glightbox" data-gallery="team"><img src="images/team1.jpg" alt="Team Member 1" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show team"><a href="images/team2.jpg" class="glightbox" data-gallery="team"><img src="images/team2.jpg" alt="Team Member 2" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show team"><a href="images/team3.jpg" class="glightbox" data-gallery="team"><img src="images/team3.jpg" alt="Team Member 3" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show team"><a href="images/team4.jpg" class="glightbox" data-gallery="team"><img src="images/team4.jpg" alt="Team Member 4" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show team"><a href="images/team5.jpg" class="glightbox" data-gallery="team"><img src="images/team5.jpg" alt="Team Member 5" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show team"><a href="images/team6.jpg" class="glightbox" data-gallery="team"><img src="images/team6.jpg" alt="Team Member 6" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show team"><a href="images/team7.jpg" class="glightbox" data-gallery="team"><img src="images/team7.jpg" alt="Team Member 7" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show team"><a href="images/team8.jpg" class="glightbox" data-gallery="team"><img src="images/team8.jpg" alt="Team Member 8" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show team"><a href="images/team9.jpg" class="glightbox" data-gallery="team"><img src="images/team9.jpg" alt="Team Member 9" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show team"><a href="images/team10.jpg" class="glightbox" data-gallery="team"><img src="images/team10.jpg" alt="Team Member 10" class="w-full h-auto rounded-lg shadow-md"></a></div>
+
+      <!-- Office -->
+      <div class="gallery-item show office"><a href="images/office1.jpg" class="glightbox" data-gallery="office"><img src="images/office1.jpg" alt="Office 1" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show office"><a href="images/office2.jpg" class="glightbox" data-gallery="office"><img src="images/office2.jpg" alt="Office 2" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      
+
+      <!-- Field Work -->
+      <div class="gallery-item show field"><a href="images/field1.jpg" class="glightbox" data-gallery="field"><img src="images/field1.jpg" alt="Field Work 1" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show field"><a href="images/field2.jpg" class="glightbox" data-gallery="field"><img src="images/field2.jpg" alt="Field Work 2" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show field"><a href="images/field3.jpg" class="glightbox" data-gallery="field"><img src="images/field3.jpg" alt="Field Work 3" class="w-full h-auto rounded-lg shadow-md"></a></div>
+
+      <!-- Decorations -->
+      <div class="gallery-item show deco"><a href="images/deco1.jpg" class="glightbox" data-gallery="deco"><img src="images/deco1.jpg" alt="Decoration 1" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show deco"><a href="images/deco2.jpg" class="glightbox" data-gallery="deco"><img src="images/deco2.jpg" alt="Decoration 2" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show deco"><a href="images/deco3.jpg" class="glightbox" data-gallery="deco"><img src="images/deco3.jpg" alt="Decoration 3" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show deco"><a href="images/deco4.jpg" class="glightbox" data-gallery="deco"><img src="images/deco4.jpg" alt="Decoration 4" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show deco"><a href="images/deco5.jpg" class="glightbox" data-gallery="deco"><img src="images/deco5.jpg" alt="Decoration 5" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show deco"><a href="images/deco6.jpg" class="glightbox" data-gallery="deco"><img src="images/deco6.jpg" alt="Decoration 6" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show deco"><a href="images/deco7.jpg" class="glightbox" data-gallery="deco"><img src="images/deco7.jpg" alt="Decoration 7" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show deco"><a href="images/deco8.jpg" class="glightbox" data-gallery="deco"><img src="images/deco8.jpg" alt="Decoration 8" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show deco"><a href="images/deco9.jpg" class="glightbox" data-gallery="deco"><img src="images/deco9.jpg" alt="Decoration 9" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show deco"><a href="images/deco10.jpg" class="glightbox" data-gallery="deco"><img src="images/deco10.jpg" alt="Decoration 10" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show deco"><a href="images/deco11.jpg" class="glightbox" data-gallery="deco"><img src="images/deco11.jpg" alt="Decoration 11" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show deco"><a href="images/deco12.jpg" class="glightbox" data-gallery="deco"><img src="images/deco12.jpg" alt="Decoration 12" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show deco"><a href="images/deco13.jpg" class="glightbox" data-gallery="deco"><img src="images/deco13.jpg" alt="Decoration 13" class="w-full h-auto rounded-lg shadow-md"></a></div>
+
+      <!-- Charity -->
+      <div class="gallery-item show charity"><a href="images/charity1.jpg" class="glightbox" data-gallery="charity"><img src="images/charity1.jpg" alt="Charity 1" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show charity"><a href="images/charity2.jpg" class="glightbox" data-gallery="charity"><img src="images/charity2.jpg" alt="Charity 2" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show charity"><a href="images/charity3.jpg" class="glightbox" data-gallery="charity"><img src="images/charity3.jpg" alt="Charity 3" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show charity"><a href="images/charity4.jpg" class="glightbox" data-gallery="charity"><img src="images/charity4.jpg" alt="Charity 4" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show charity"><a href="images/charity5.jpg" class="glightbox" data-gallery="charity"><img src="images/charity5.jpg" alt="Charity 5" class="w-full h-auto rounded-lg shadow-md"></a></div>
+
+      <!-- Cars -->
+      <div class="gallery-item show cars"><a href="images/car1.jpg" class="glightbox" data-gallery="cars"><img src="images/car1.jpg" alt="Car 1" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show cars"><a href="images/car2.jpg" class="glightbox" data-gallery="cars"><img src="images/car2.jpg" alt="Car 2" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show cars"><a href="images/car3.jpg" class="glightbox" data-gallery="cars"><img src="images/car3.jpg" alt="Car 3" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show cars"><a href="images/car4.jpg" class="glightbox" data-gallery="cars"><img src="images/car4.jpg" alt="Car 4" class="w-full h-auto rounded-lg shadow-md"></a></div>
+
+      <!-- Tombstones -->
+      <div class="gallery-item show tombstones"><a href="images/tomb1.jpg" class="glightbox" data-gallery="tombstones"><img src="images/tomb4.jpg" alt="Tombstone 1" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show tombstones"><a href="images/tomb2.jpg" class="glightbox" data-gallery="tombstones"><img src="images/tomb6.jpg" alt="Tombstone 2" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show tombstones"><a href="images/tomb3.jpg" class="glightbox" data-gallery="tombstones"><img src="images/tomb7.jpg" alt="Tombstone 3" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show tombstones"><a href="images/tomb4.jpg" class="glightbox" data-gallery="tombstones"><img src="images/tomb8.jpg" alt="Tombstone 4" class="w-full h-auto rounded-lg shadow-md"></a></div>
+
+      <!-- Funeral Work -->
+      <div class="gallery-item show work"><a href="images/work1.jpg" class="glightbox" data-gallery="work"><img src="images/work3.jpg" alt="Funeral Work 1" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show work"><a href="images/work2.jpg" class="glightbox" data-gallery="work"><img src="images/work2.jpg" alt="Funeral Work 2" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show work"><a href="images/work3.jpg" class="glightbox" data-gallery="work"><img src="images/work1.jpg" alt="Funeral Work 3" class="w-full h-auto rounded-lg shadow-md"></a></div>
+      <div class="gallery-item show work"><a href="images/work4.jpg" class="glightbox" data-gallery="work"><img src="images/work4.jpg" alt="Funeral Work 4" class="w-full h-auto rounded-lg shadow-md"></a></div>
+
+      <!-- Videos -->
+<div class="gallery-item show videos">
+  <a href="videos/VID-20250709-WA0140.mp4" class="glightbox" data-gallery="videos">
+    <video class="w-full h-auto rounded-lg shadow-md" muted>
+      <source src="videos/VID-20250709-WA0140.mp4" type="video/mp4">
+    </video>
+  </a>
+</div>
+
+<div class="gallery-item show videos">
+  <a href="videos/VID-20250709-WA0110.mp4" class="glightbox" data-gallery="videos">
+    <video class="w-full h-auto rounded-lg shadow-md" muted>
+      <source src="videos/VID-20250709-WA0110.mp4" type="video/mp4">
+    </video>
+  </a>
+</div>
+
+<div class="gallery-item show videos">
+  <a href="videos/VID-20250709-WA0139.mp4" class="glightbox" data-gallery="videos">
+    <video class="w-full h-auto rounded-lg shadow-md" muted>
+      <source src="videos/VID-20250709-WA0139.mp4" type="video/mp4">
+    </video>
+  </a>
+</div>
+
+<div class="gallery-item show videos">
+  <a href="videos/VID-20250709-WA0032.mp4" class="glightbox" data-gallery="videos">
+    <video class="w-full h-auto rounded-lg shadow-md" muted>
+      <source src="videos/VID-20250709-WA0032.mp4" type="video/mp4">
+    </video>
+  </a>
+</div>
+
+<div class="gallery-item show videos">
+  <a href="videos/VID-20250709-WA0141.mp4" class="glightbox" data-gallery="videos">
+    <video class="w-full h-auto rounded-lg shadow-md" muted>
+      <source src="videos/VID-20250709-WA0141.mp4" type="video/mp4">
+    </video>
+  </a>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+<footer class="bg-gray-900 text-white pt-12 pb-8 relative">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+      
+      <!-- Logo + About -->
+      <div>
+        <div class="flex items-center mb-4">
+          <img src="images/logo.jpg" alt="Mighty Kingdom Funerals Logo" class="h-12 mr-3">
+          <h2 class="text-xl font-bold">Mighty Kingdom Funerals</h2>
+        </div>
+        <p class="text-gray-400">Dignified services with compassion.</p>
+      </div>
+
+      <!-- Quick Links & Services -->
+      <div class="grid grid-cols-2 gap-6">
+        <!-- Quick Links -->
+        <div>
+          <h3 class="font-semibold text-yellow-400 mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="index.html" class="hover:text-yellow-400 transition">Home</a></li>
+            <li><a href="about.html" class="hover:text-yellow-400 transition">About</a></li>
+            <li><a href="plans.html" class="hover:text-yellow-400 transition">Policies</a></li>
+            <li><a href="gallery.html" class="hover:text-yellow-400 transition">Gallery</a></li>
+            <li><a href="payments.html" class="hover:text-yellow-400 transition">Banking Details</a></li>
+            <li><a href="contact.html" class="hover:text-yellow-400 transition">Contact</a></li>
+            <li><a href="caskets.html" class="hover:text-yellow-400 transition">Caskets</a></li>
+            <li><a href="terms.html" class="hover:text-yellow-400 transition">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h3 class="font-semibold text-yellow-400 mb-4">Our Services</h3>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li>Funeral Policies</li>
+            <li>Burial Services</li>
+            <li>Repatriation</li>
+            <li>Caskets & Tombstones</li>
+            <li>Grave Decoration</li>
+            <li>Transportation</li>
+            <li>Funeral Programs</li>
+            <li>Grocery Packages</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Social Media -->
+      <div class="md:ml-auto mt-6 md:mt-0">
+        <h3 class="font-semibold text-yellow-400 mb-4">Follow Us</h3>
+        <div class="flex space-x-6 text-2xl">
+          <a href="https://www.facebook.com/profile.php?id=100087009226034#" class="text-gray-400 hover:text-yellow-400 transition">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/27714319306" class="text-gray-400 hover:text-yellow-400 transition">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-yellow-400 transition">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-yellow-400 transition">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400 text-sm">
+      <p>&copy; 2023 Mighty Kingdom Funerals. All rights reserved. | By 
+        <a href="https://www.valoyitech.co.za/" target="_blank" class="text-yellow-400 hover:underline">ValoyItech</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/27714319306" target="_blank" class="fixed bottom-5 right-5 z-50 flex items-center bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">
+    <i class="fab fa-whatsapp text-2xl mr-2"></i>
+    <span class="font-medium">How can we help?</span>
+  </a>
+</footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+
+    // GLightbox
+    const lightbox = GLightbox({
+      selector: '.glightbox'
+    });
+
+    // Filter gallery
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter;
+
+        // Update active button
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        // Filter items
+        galleryItems.forEach(item => {
+          if (filter === 'all' || item.classList.contains(filter)) {
+            item.classList.add('show');
+          } else {
+            item.classList.remove('show');
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

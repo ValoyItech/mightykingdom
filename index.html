@@ -136,7 +136,7 @@
         }
 
         .bg-section {
-            background-image: url('images/hero1.jpg');
+            background-image: url('images/bg2.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -163,36 +163,46 @@
 </head>
 <body class="bg-gray-50">
     <!-- Header/Navigation -->
-    <header class="fixed w-full z-50 gradient-bg text-white shadow-lg">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="images/logo.png" alt="Mighty Kingdom Funerals Logo" class="h-16 mr-3">
-                <h1 class="text-xl md:text-2xl font-bold">Mighty Kingdom Funerals</h1>
-            </div>
-            <nav class="hidden md:block">
-                <ul class="flex space-x-8">
-                    <li><a href="#home" class="nav-link hover:text-yellow-300 transition">Home</a></li>
-                    <li><a href="#services" class="nav-link hover:text-yellow-300 transition">Services</a></li>
-                    <li><a href="#policies" class="nav-link hover:text-yellow-300 transition">Policies</a></li>
-                    <li><a href="#gallery" class="nav-link hover:text-yellow-300 transition">Gallery</a></li>
-                    <li><a href="#contact" class="nav-link hover:text-yellow-300 transition">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="md:hidden text-2xl" id="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
+<header class="fixed w-full z-50 gradient-bg text-white shadow-lg">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="images/logo.jpg" alt="Mighty Kingdom Funerals Logo" class="h-16 mr-3">
+            <h1 class="text-xl md:text-2xl font-bold">Mighty Kingdom Funerals</h1>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden gradient-bg py-4 px-4">
-            <ul class="flex flex-col space-y-4">
-                <li><a href="#home" class="nav-link hover:text-yellow-300 transition">Home</a></li>
-                <li><a href="#services" class="nav-link hover:text-yellow-300 transition">Services</a></li>
-                <li><a href="#policies" class="nav-link hover:text-yellow-300 transition">Policies</a></li>
-                <li><a href="#gallery" class="nav-link hover:text-yellow-300 transition">Gallery</a></li>
-                <li><a href="#contact" class="nav-link hover:text-yellow-300 transition">Contact</a></li>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:block">
+            <ul class="flex space-x-8">
+                <li><a href="index.html" class="nav-link hover:text-yellow-300 transition">Home</a></li>
+                <li><a href="about.html" class="nav-link hover:text-yellow-300 transition">About Us</a></li>
+                <li><a href="plans.html" class="nav-link hover:text-yellow-300 transition">Policy Plans</a></li>
+                <li><a href="caskets.html" class="nav-link hover:text-yellow-300 transition">Caskets</a></li>
+                <li><a href="gallery.html" class="nav-link hover:text-yellow-300 transition">Gallery</a></li>
+                <li><a href="payments.html" class="nav-link hover:text-yellow-300 transition">Payments</a></li>
+                <li><a href="contact.html" class="nav-link hover:text-yellow-300 transition">Contact</a></li>
             </ul>
-        </div>
-    </header>
+        </nav>
+
+        <!-- Mobile Toggle Button -->
+        <button class="md:hidden text-2xl" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden gradient-bg py-4 px-4">
+        <ul class="flex flex-col space-y-4">
+            <li><a href="index.html" class="nav-link hover:text-yellow-300 transition">Home</a></li>
+            <li><a href="about.html" class="nav-link hover:text-yellow-300 transition">About Us</a></li>
+            <li><a href="plans.html" class="nav-link hover:text-yellow-300 transition">Policy Plans</a></li>
+            <li><a href="caskets.html" class="nav-link hover:text-yellow-300 transition">Caskets</a></li>
+            <li><a href="gallery.html" class="nav-link hover:text-yellow-300 transition">Gallery</a></li>
+            <li><a href="payments.html" class="nav-link hover:text-yellow-300 transition">Payments</a></li>
+            <li><a href="contact.html" class="nav-link hover:text-yellow-300 transition">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
 
     <!-- Hero Section -->
 <section id="home" class="relative h-screen overflow-hidden">
@@ -207,6 +217,9 @@
           <div class="swiper-slide bg-cover bg-center w-full h-full" style="background-image: url('images/hero2.jpg');"></div>
           <!-- Slide 3 -->
           <div class="swiper-slide bg-cover bg-center w-full h-full" style="background-image: url('images/hero3.jpg');"></div>
+          <div class="swiper-slide bg-cover bg-center w-full h-full" style="background-image: url('images/hero4.jpg');"></div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-cover bg-center w-full h-full" style="background-image: url('images/hero5.jpg');"></div>
         </div>
       </div>
       <div class="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -228,30 +241,77 @@
     <!-- About Section -->
 <section class="py-16 bg-[#fefae0] font-[Poppins,sans-serif]">
   <div class="container mx-auto px-4">
-    <div class="flex flex-col md:flex-row items-center">
-      
+    <!-- Centered Heading -->
+    <h2 class="text-4xl font-extrabold text-[#1a3e2d] text-center mb-12 animate-fade-up">
+      About Mighty Kingdom Funerals
+    </h2>
+
+    <div class="flex flex-col md:flex-row items-center gap-10">
+
       <!-- Text Content -->
-      <div class="md:w-1/2 mb-10 md:mb-0 md:pr-8">
-        <h2 class="text-4xl font-extrabold text-[#1a3e2d] mb-6 animate-fade-up">About Mighty Kingdom Funerals</h2>
+      <div class="md:w-1/2">
         <p class="text-gray-800 mb-4 leading-relaxed animate-fade-up delay-100">
           Mighty Kingdom Funerals is committed to providing compassionate and dignified funeral services to families during their most difficult times.
         </p>
-        <p class="text-gray-800 mb-4 leading-relaxed animate-fade-up delay-200">
-          With years of experience in the industry, we understand the importance of honoring your loved ones with respect and care.
-        </p>
-        <p class="text-gray-800 leading-relaxed animate-fade-up delay-300">
-          Our team is dedicated to guiding you through every step of the process, ensuring that your needs are met with professionalism and empathy.
-        </p>
+
+        <div class="mb-6 animate-fade-up delay-200">
+          <h3 class="text-xl font-semibold text-[#1a3e2d] mb-2">Mission</h3>
+          <p class="text-gray-800 leading-relaxed">
+            To uphold professional ethics by maintaining the highest standards in the funeral industry.
+          </p>
+        </div>
+
+        <div class="mb-6 animate-fade-up delay-300">
+          <h3 class="text-xl font-semibold text-[#1a3e2d] mb-2">Vision</h3>
+          <p class="text-gray-800 leading-relaxed">
+            To render quality funeral service that exceeds the expectations of our clients in the country.
+          </p>
+        </div>
+
+        <div class="animate-fade-up delay-400">
+          <h3 class="text-xl font-semibold text-[#1a3e2d] mb-4">Our Values</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2 text-gray-800">
+              <i class="fas fa-check-circle text-[#1a3e2d] mt-1"></i>
+              <span><strong>Respect:</strong> Uphold the values of ubuntu and dignity</span>
+            </li>
+            <li class="flex items-start gap-2 text-gray-800">
+              <i class="fas fa-check-circle text-[#1a3e2d] mt-1"></i>
+              <span><strong>Integrity:</strong> We act in an ethical manner — trust, honesty, reliability and integrity</span>
+            </li>
+            <li class="flex items-start gap-2 text-gray-800">
+              <i class="fas fa-check-circle text-[#1a3e2d] mt-1"></i>
+              <span><strong>Compassion:</strong> We put ourselves in the shoes of our clients</span>
+            </li>
+            <li class="flex items-start gap-2 text-gray-800">
+              <i class="fas fa-check-circle text-[#1a3e2d] mt-1"></i>
+              <span><strong>Accountability:</strong> We take full responsibility and ownership for our service</span>
+            </li>
+            <li class="flex items-start gap-2 text-gray-800">
+              <i class="fas fa-check-circle text-[#1a3e2d] mt-1"></i>
+              <span><strong>Innovation:</strong> Continuously introducing new ways of doing our work</span>
+            </li>
+            <li class="flex items-start gap-2 text-gray-800">
+              <i class="fas fa-check-circle text-[#1a3e2d] mt-1"></i>
+              <span><strong>Excellence:</strong> We strive for consistent, outstanding results</span>
+            </li>
+          </ul>
+        </div>
+
+        <a href="about.html" class="inline-block mt-8 bg-[#1a3e2d] text-white px-6 py-3 rounded-full shadow hover:bg-[#264d34] transition-all duration-300 animate-fade-up delay-500">
+          Learn More About Us
+        </a>
       </div>
 
       <!-- Image -->
-      <div class="md:w-1/2 rounded-lg overflow-hidden shadow-2xl">
-        <img src="images/bg.jpg" alt="Funeral Service" class="w-full h-auto object-cover rounded-lg animate-zoom-in">
+      <div class="md:w-1/2 rounded-lg overflow-hidden shadow-2xl animate-zoom-in">
+        <img src="images/bg.jpg" alt="Funeral Service" class="w-full h-auto object-cover rounded-lg">
       </div>
-      
+
     </div>
   </div>
 </section>
+
 
 
     <!-- Services Section -->
@@ -301,52 +361,58 @@
 </section>
 
 
-    <!-- Tombstone Showcase -->
+    <!-- Preview of Our Caskets & Tombstones -->
 <section class="py-16 bg-gray-100">
   <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-12 text-dark-green">Tombstones for Sale & Policy Benefits</h2>
+    <h2 class="text-3xl font-bold text-center mb-12 text-dark-green">Preview of Our Caskets & Tombstones</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- Tombstone 1 -->
-      <div class="tombstone-card bg-white rounded-lg overflow-hidden shadow-lg">
-        <img src="images/tomb1.jpg" alt="Classic Tombstone" class="w-full aspect-[4/3] object-contain bg-white">
+      <!-- Casket 1 -->
+      <a href="caskets.html" class="tombstone-card bg-white rounded-lg overflow-hidden shadow-lg block hover:shadow-xl transition">
+        <img src="images/cas1.jpg" alt="Half View Casket" class="w-full aspect-[4/3] object-contain bg-white">
         <div class="p-6">
-          <h4 class="text-xl font-bold mb-2 text-[#2d6a4f]">Classic Granite</h4>
-          <p class="text-gray-700 mb-4">Elegant and timeless granite tombstone with engraved lettering.</p>
-          <button class="border border-yellow-400 text-yellow-500 bg-white hover:bg-dark-green hover:text-[#2d6a4f] py-2 px-4 rounded transition duration-300">
-  View Options
-</button>
+          <h4 class="text-xl font-bold mb-2 text-[#2d6a4f]">Half View Casket</h4>
+          <p class="text-gray-700 mb-4">Elegant wrap-around half view casket used in our MK004 scheme.</p>
+          <div class="text-right">
+            <button class="border border-yellow-400 text-yellow-500 bg-white hover:bg-dark-green hover:text-white py-2 px-4 rounded transition duration-300">
+              View Full Range
+            </button>
+          </div>
         </div>
-      </div>
+      </a>
 
-      <!-- Tombstone 2 -->
-      <div class="tombstone-card bg-white rounded-lg overflow-hidden shadow-lg">
-        <img src="images/tomb2.jpg" alt="Modern Tombstone" class="w-full aspect-[4/3] object-contain bg-white">
+      <!-- Casket 2 -->
+      <a href="caskets.html" class="tombstone-card bg-white rounded-lg overflow-hidden shadow-lg block hover:shadow-xl transition">
+        <img src="images/cas2.jpg" alt="Full View Kingston" class="w-full aspect-[4/3] object-contain bg-white">
         <div class="p-6">
-          <h4 class="text-xl font-bold mb-2 text-[#2d6a4f]">Modern Design</h4>
-          <p class="text-gray-700 mb-4">Contemporary tombstone with sleek lines and customizable features.</p>
-          <button class="border border-yellow-400 text-yellow-500 bg-white hover:bg-dark-green hover:text-[#2d6a4f] py-2 px-4 rounded transition duration-300">
-  View Options
-</button>
+          <h4 class="text-xl font-bold mb-2 text-[#2d6a4f]">Full View Kingston</h4>
+          <p class="text-gray-700 mb-4">Premium Kingston casket offered under MK003 scheme, available in rich finishes.</p>
+          <div class="text-right">
+            <button class="border border-yellow-400 text-yellow-500 bg-white hover:bg-dark-green hover:text-white py-2 px-4 rounded transition duration-300">
+              View Full Range
+            </button>
+          </div>
         </div>
-      </div>
+      </a>
 
-      <!-- Tombstone 3 -->
-      <div class="tombstone-card bg-white rounded-lg overflow-hidden shadow-lg">
-        <img src="images/tomb3.jpg" alt="Custom Tombstone" class="w-full aspect-[4/3] object-contain bg-white">
+      <!-- Tombstone -->
+      <a href="caskets.html" class="tombstone-card bg-white rounded-lg overflow-hidden shadow-lg block hover:shadow-xl transition">
+        <img src="images/tomb3.jpg" alt="Granite Tombstone" class="w-full aspect-[4/3] object-contain bg-white">
         <div class="p-6">
-          <h4 class="text-xl font-bold mb-2 text-[#2d6a4f]">Custom Memorial</h4>
-          <p class="text-gray-700 mb-4">Personalized tombstone designed to reflect your loved one's unique life.</p>
-          <button class="border border-yellow-400 text-yellow-500 bg-white hover:bg-dark-green hover:text-[#2d6a4f] py-2 px-4 rounded transition duration-300">
-  View Options
-</button>
-
+          <h4 class="text-xl font-bold mb-2 text-[#2d6a4f]">Granite Tombstones</h4>
+          <p class="text-gray-700 mb-4">We offer standard and custom granite tombstones with high quality engraving and installation.</p>
+          <div class="text-right">
+            <button class="border border-yellow-400 text-yellow-500 bg-white hover:bg-dark-green hover:text-white py-2 px-4 rounded transition duration-300">
+              View Full Range
+            </button>
+          </div>
         </div>
-      </div>
+      </a>
 
     </div>
   </div>
 </section>
+
 
 
 
@@ -356,266 +422,343 @@
             <h2 class="text-3xl font-bold text-center mb-12 text-dark-green">Our Burial Policies</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-                <!-- Policy 1 -->
-                <div class="policy-card bg-gray-100 rounded-lg p-6 border-l-4 border-yellow-500 shadow-md hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold mb-3 text-dark-green">MK004 Policy</h3>
-                    <p class="text-gray-700 mb-2"><strong>Coverage:</strong> Main Member + 5 Extended Members</p>
-                    <p class="text-gray-700 mb-2"><strong>Monthly Premium:</strong> R130.00</p>
-                    <p class="text-gray-700 mb-2"><strong>Age Limit:</strong> 0–64 years</p>
-                    <div class="mt-4">
-                        <button class="text-dark-green font-semibold hover:text-yellow-600 transition">View Benefits →</button>
-                    </div>
-                </div>
-                
-                <!-- Policy 2 -->
-                <div class="policy-card bg-gray-100 rounded-lg p-6 border-l-4 border-yellow-500 shadow-md hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold mb-3 text-dark-green">MK005 Policy</h3>
-                    <p class="text-gray-700 mb-2"><strong>Coverage:</strong> Main Member + 9 Extended Members</p>
-                    <p class="text-gray-700 mb-2"><strong>Monthly Premium:</strong> R180.00</p>
-                    <p class="text-gray-700 mb-2"><strong>Age Limit:</strong> 0–64 years</p>
-                    <div class="mt-4">
-                        <button class="text-dark-green font-semibold hover:text-yellow-600 transition">View Benefits →</button>
-                    </div>
-                </div>
-                
-                <!-- Policy 3 -->
-                <div class="policy-card bg-gray-100 rounded-lg p-6 border-l-4 border-yellow-500 shadow-md hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold mb-3 text-dark-green">Extended MK005</h3>
-                    <p class="text-gray-700 mb-2"><strong>Coverage:</strong> Main Member + 10 Extended Members</p>
-                    <p class="text-gray-700 mb-2"><strong>Monthly Premium:</strong> R250.00</p>
-                    <p class="text-gray-700 mb-2"><strong>Age Limit:</strong> 65–74 years</p>
-                    <div class="mt-4">
-                        <button class="text-dark-green font-semibold hover:text-yellow-600 transition">View Benefits →</button>
-                    </div>
-                </div>
-                
-                <!-- Policy 4 -->
-                <div class="policy-card bg-gray-100 rounded-lg p-6 border-l-4 border-yellow-500 shadow-md hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold mb-3 text-dark-green">Pensioner's Policy</h3>
-                    <p class="text-gray-700 mb-2"><strong>Coverage:</strong> Main Member + Spouse</p>
-                    <p class="text-gray-700 mb-2"><strong>Monthly Premium:</strong> R130.00</p>
-                    <p class="text-gray-700 mb-2"><strong>Age Limit:</strong> No Limit</p>
-                    <div class="mt-4">
-                        <button class="text-dark-green font-semibold hover:text-yellow-600 transition">View Benefits →</button>
-                    </div>
-                </div>
+  
+  <!-- MK001 Policy -->
+  <div class="policy-card bg-gray-100 rounded-lg p-6 border-l-4 border-yellow-500 shadow-md hover:shadow-lg transition">
+    <h3 class="text-xl font-bold mb-3 text-dark-green">MK001 Scheme</h3>
+    <p class="text-gray-700 mb-2"><strong>Coverage:</strong> Main Member + 9 Members</p>
+    <p class="text-gray-700 mb-2"><strong>Monthly Premium:</strong> R190.00</p>
+    <p class="text-gray-700 mb-2"><strong>No Service Fee:</strong> R1400</p>
+    <div class="mt-4">
+      <a href="plans.html" class="text-dark-green font-semibold hover:text-yellow-600 transition">View Plan Details →</a>
+    </div>
+  </div>
+
+  <!-- MK002 Policy -->
+  <div class="policy-card bg-gray-100 rounded-lg p-6 border-l-4 border-yellow-500 shadow-md hover:shadow-lg transition">
+    <h3 class="text-xl font-bold mb-3 text-dark-green">MK002 Scheme</h3>
+    <p class="text-gray-700 mb-2"><strong>Coverage:</strong> Up to 14 Members</p>
+    <p class="text-gray-700 mb-2"><strong>Monthly Premium:</strong> R230.00</p>
+    <p class="text-gray-700 mb-2"><strong>No Service Fee:</strong> R1600</p>
+    <div class="mt-4">
+      <a href="plans.html" class="text-dark-green font-semibold hover:text-yellow-600 transition">View Plan Details →</a>
+    </div>
+  </div>
+
+  <!-- MK003 Policy -->
+  <div class="policy-card bg-gray-100 rounded-lg p-6 border-l-4 border-yellow-500 shadow-md hover:shadow-lg transition">
+    <h3 class="text-xl font-bold mb-3 text-dark-green">MK003 Scheme</h3>
+    <p class="text-gray-700 mb-2"><strong>Coverage:</strong> Main Member + 9 Members</p>
+    <p class="text-gray-700 mb-2"><strong>Monthly Premium:</strong> R290.00</p>
+    <p class="text-gray-700 mb-2"><strong>No Service Fee:</strong> R2200</p>
+    <div class="mt-4">
+      <a href="plans.html" class="text-dark-green font-semibold hover:text-yellow-600 transition">View Plan Details →</a>
+    </div>
+  </div>
+
+  <!-- MK004 Policy -->
+  <div class="policy-card bg-gray-100 rounded-lg p-6 border-l-4 border-yellow-500 shadow-md hover:shadow-lg transition">
+    <h3 class="text-xl font-bold mb-3 text-dark-green">MK004 Scheme</h3>
+    <p class="text-gray-700 mb-2"><strong>Coverage:</strong> Main Member + 9 Members</p>
+    <p class="text-gray-700 mb-2"><strong>Monthly Premium:</strong> R360.00</p>
+    <p class="text-gray-700 mb-2"><strong>No Service Fee:</strong> R2500</p>
+    <div class="mt-4">
+      <a href="plans.html" class="text-dark-green font-semibold hover:text-yellow-600 transition">View Plan Details →</a>
+    </div>
+  </div>
+  
             </div>
             
             <!-- Benefits Section -->
-            <div class="bg-[#2d6a4f] text-white rounded-lg p-8 shadow-xl">
-                <h3 class="text-2xl font-bold mb-6 text-yellow-400">Policy Benefits</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="flex items-start">
-                        <div class="text-yellow-400 mr-3 mt-1">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <p>Repatriation services</p>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="text-yellow-400 mr-3 mt-1">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <p>Quarter-view casket</p>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="text-yellow-400 mr-3 mt-1">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <p>Hearse service</p>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="text-yellow-400 mr-3 mt-1">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <p>Funeral programs</p>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="text-yellow-400 mr-3 mt-1">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <p>Tent & chairs</p>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="text-yellow-400 mr-3 mt-1">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <p>Grocery pack</p>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="text-yellow-400 mr-3 mt-1">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <p>Refreshments</p>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="text-yellow-400 mr-3 mt-1">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <p>Grave marker</p>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="text-yellow-400 mr-3 mt-1">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <p>Mortuary services (free storage)</p>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="text-yellow-400 mr-3 mt-1">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <p>Delivery of deceased to burial site</p>
-                    </div>
-                </div>
+<div class="bg-[#2d6a4f] text-white rounded-lg p-8 shadow-xl">
+    <h3 class="text-2xl font-bold mb-6 text-yellow-400">Policy Benefits</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="flex items-start">
+            <div class="text-yellow-400 mr-3 mt-1">
+                <i class="fas fa-check-circle"></i>
             </div>
+            <p>Mortuary services (free storage)</p>
+        </div>
+
+        <div class="flex items-start">
+            <div class="text-yellow-400 mr-3 mt-1">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <p>Assistance with death certificate registration</p>
+        </div>
+
+        <div class="flex items-start">
+            <div class="text-yellow-400 mr-3 mt-1">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <p>Quarter-view / Kingston / Wrap-around casket</p>
+        </div>
+
+        <div class="flex items-start">
+            <div class="text-yellow-400 mr-3 mt-1">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <p>Hearse & family vehicles</p>
+        </div>
+
+        <div class="flex items-start">
+            <div class="text-yellow-400 mr-3 mt-1">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <p>Delivery of deceased to burial place</p>
+        </div>
+
+        <div class="flex items-start">
+            <div class="text-yellow-400 mr-3 mt-1">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <p>Full grocery pack (varies per plan)</p>
+        </div>
+
+        <div class="flex items-start">
+            <div class="text-yellow-400 mr-3 mt-1">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <p>Airtime for any network (R30–R110)</p>
+        </div>
+
+        <div class="flex items-start">
+            <div class="text-yellow-400 mr-3 mt-1">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <p>Colour funeral programmes (up to 100 copies)</p>
+        </div>
+
+        <div class="flex items-start">
+            <div class="text-yellow-400 mr-3 mt-1">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <p>Tent & 100 chairs at home</p>
+        </div>
+
+        <div class="flex items-start">
+            <div class="text-yellow-400 mr-3 mt-1">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <p>Tent/gazebo & decoration at graveyard</p>
+        </div>
+
+        <div class="flex items-start">
+            <div class="text-yellow-400 mr-3 mt-1">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <p>24 refreshments at graveyard</p>
+        </div>
+
+        <div class="flex items-start">
+            <div class="text-yellow-400 mr-3 mt-1">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <p>Grave decoration and grave mark</p>
+        </div>
+
+        <div class="flex items-start">
+            <div class="text-yellow-400 mr-3 mt-1">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <p>Coffin spray / wreath (plan dependent)</p>
+        </div>
+
+    </div>
+</div>
+
             
             <!-- Terms and Conditions -->
 <div class="mt-12 bg-white rounded-lg p-8 shadow-xl border border-gray-200">
-    <h3 class="text-3xl font-bold mb-8 text-dark-green text-center">Terms & Conditions</h3>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Item -->
-        <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
-            <div class="text-yellow-500 text-2xl mr-4 mt-1">
-                <i class="fas fa-id-card-alt"></i>
-            </div>
-            <p><strong>Eligibility:</strong> The main member must be between 18 and 64 years old.</p>
-        </div>
+  <h3 class="text-3xl font-bold mb-8 text-dark-green text-center">Terms & Conditions</h3>
 
-        <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
-            <div class="text-yellow-500 text-2xl mr-4 mt-1">
-                <i class="fas fa-money-check-alt"></i>
-            </div>
-            <p><strong>Payout Limit:</strong> If Mighty Kingdom Funerals fails to operate in the country, a payout of R1600 will be made.</p>
-        </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-        <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
-            <div class="text-yellow-500 text-2xl mr-4 mt-1">
-                <i class="fas fa-exclamation-triangle"></i>
-            </div>
-            <p><strong>Full Disclosure:</strong> All information must be disclosed truthfully when joining.</p>
-        </div>
-
-        <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
-            <div class="text-yellow-500 text-2xl mr-4 mt-1">
-                <i class="fas fa-clock"></i>
-            </div>
-            <p><strong>Waiting Period:</strong> There is a 6-month waiting period before activation.</p>
-        </div>
-
-        <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
-            <div class="text-yellow-500 text-2xl mr-4 mt-1">
-                <i class="fas fa-coins"></i>
-            </div>
-            <p><strong>Joining Fee:</strong> A once-off joining fee of R100 is required.</p>
-        </div>
-
-        <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
-            <div class="text-yellow-500 text-2xl mr-4 mt-1">
-                <i class="fas fa-ban"></i>
-            </div>
-            <p><strong>Cancellation:</strong> The policy is canceled if the main member passes away.</p>
-        </div>
-
-        <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
-            <div class="text-yellow-500 text-2xl mr-4 mt-1">
-                <i class="fas fa-truck-moving"></i>
-            </div>
-            <p><strong>Transportation Fee:</strong> R8/km for delivery outside Limpopo, Gauteng, or Mpumalanga.</p>
-        </div>
-
-        <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
-            <div class="text-yellow-500 text-2xl mr-4 mt-1">
-                <i class="fas fa-pause-circle"></i>
-            </div>
-            <p><strong>Suspension:</strong> Policy is suspended if premiums are not paid.</p>
-        </div>
-
-        <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
-            <div class="text-yellow-500 text-2xl mr-4 mt-1">
-                <i class="fas fa-calendar-alt"></i>
-            </div>
-            <p><strong>Monthly Payments:</strong> Premiums must be paid by the 1st of each month.</p>
-        </div>
+    <!-- No Joining Fee -->
+    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+      <div class="text-yellow-500 text-2xl mr-4 mt-1">
+        <i class="fas fa-user-plus"></i>
+      </div>
+      <p>No joining fee in all the plans or policies, you only pay the premium from the onset.</p>
     </div>
+
+    <!-- Inception Date -->
+    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+      <div class="text-yellow-500 text-2xl mr-4 mt-1">
+        <i class="fas fa-calendar-check"></i>
+      </div>
+      <p>The inception date is on the date we receive the first premium.</p>
+    </div>
+
+    <!-- No Refund -->
+    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+      <div class="text-yellow-500 text-2xl mr-4 mt-1">
+        <i class="fas fa-undo-alt"></i>
+      </div>
+      <p>Should a client decide to cancel or terminate the policy after joining, the <strong>No refund</strong> rule shall apply in all policies irrespective of the circumstances; the premium(s) cannot in any way be refunded in full or in part.</p>
+    </div>
+
+    <!-- No Cash Claim -->
+    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+      <div class="text-yellow-500 text-2xl mr-4 mt-1">
+        <i class="fas fa-hand-holding-usd"></i>
+      </div>
+      <p>Claims are not exchanged for cash because it is only for the service.</p>
+    </div>
+
+    <!-- 3-Month Waiting Period -->
+    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+      <div class="text-yellow-500 text-2xl mr-4 mt-1">
+        <i class="fas fa-hourglass-half"></i>
+      </div>
+      <p>Three (3) months waiting period shall apply in all our policies or plans.</p>
+    </div>
+
+    <!-- 30-Day Notice for Increases -->
+    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+      <div class="text-yellow-500 text-2xl mr-4 mt-1">
+        <i class="fas fa-bell"></i>
+      </div>
+      <p>Notice of 30 days will be given in the event premiums are to increase.</p>
+    </div>
+
+    <!-- 2-Month Wait from Another Undertaker -->
+    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+      <div class="text-yellow-500 text-2xl mr-4 mt-1">
+        <i class="fas fa-user-friends"></i>
+      </div>
+      <p>Joining our policies from another undertaker the waiting period shall be 2 months.</p>
+    </div>
+
+    <!-- Grocery Fund Categorisation -->
+    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+      <div class="text-yellow-500 text-2xl mr-4 mt-1">
+        <i class="fas fa-shopping-basket"></i>
+      </div>
+      <p>The grocery fund is categorised according to the policy plan should a client opt for money rather than groceries — see the product plans for information.</p>
+    </div>
+
+    <!-- Cover Validity -->
+    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+      <div class="text-yellow-500 text-2xl mr-4 mt-1">
+        <i class="fas fa-shield-alt"></i>
+      </div>
+      <p>The cover shall remain in force until the death of the principal policyholder or voluntary termination of the policy.</p>
+    </div>
+
+    <!-- External Service Provider -->
+    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+      <div class="text-yellow-500 text-2xl mr-4 mt-1">
+        <i class="fas fa-handshake"></i>
+      </div>
+      <p>If the service is rendered by another undertaker other than Mighty Kingdom, the client shall claim an amount applicable to that cover.</p>
+    </div>
+
+    <!-- Repatriation Coverage -->
+    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+      <div class="text-yellow-500 text-2xl mr-4 mt-1">
+        <i class="fas fa-route"></i>
+      </div>
+      <p>Repatriation or pick-up shall cover the radius of 300 km including return trip. Should the radius exceed 300 km, then an additional fee will be charged at R10 per kilometre.</p>
+    </div>
+
+    <!-- Premium Due Date -->
+    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+      <div class="text-yellow-500 text-2xl mr-4 mt-1">
+        <i class="fas fa-calendar-day"></i>
+      </div>
+      <p>Premiums are to be paid not later than the 10th of every month.</p>
+    </div>
+
+    <!-- Missed Payment Penalty -->
+    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+      <div class="text-yellow-500 text-2xl mr-4 mt-1">
+        <i class="fas fa-exclamation-circle"></i>
+      </div>
+      <p>Should a client fail to honour the payment for 1 month and 2 months, a fine shall be R1400 for MK001; R1600 for MK002; R2200 for MK003 and R2500 for MK005.</p>
+    </div>
+
+    <!-- Policy Termination After 3 Months -->
+    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+      <div class="text-yellow-500 text-2xl mr-4 mt-1">
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <p>Failure to honour the payment of premiums for three (3) consecutive months, the policy shall automatically be terminated or lapse. No negotiations shall be entered into as the policy has ceased to exist.</p>
+    </div>
+
+    <!-- Rejoining After Lapse -->
+    <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition">
+      <div class="text-yellow-500 text-2xl mr-4 mt-1">
+        <i class="fas fa-redo"></i>
+      </div>
+      <p>When the policy has lapsed the policyholder will have to rejoin and be subjected to a new waiting period.</p>
+    </div>
+
+  </div>
+</div>
+
 </div>
 
         </div>
     </section>
 
-    <!-- Gallery Section -->
+    <!-- Gallery & Banking Section -->
 <section id="gallery" class="py-16 bg-gray-100">
   <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-12 text-dark-green">Our Gallery</h2>
+    <h2 class="text-3xl font-bold text-center mb-6 text-dark-green">See Our Work & Access Banking Details</h2>
+    <p class="text-center text-gray-700 max-w-2xl mx-auto mb-12">
+      Explore our journey through powerful visuals that tell the story of who we are — from our team, fieldwork, and office life, to funeral services, decorations, vehicles, charity initiatives, tombstones, and heartfelt memorials. You can also find our secure banking details for payments and subscriptions.
+    </p>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <!-- Gallery Preview Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
 
-      <!-- Gallery Item 1 -->
+      <!-- Preview 1 -->
       <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
-        <img src="images/show3 (2).jpg" alt="Our Team" class="w-full aspect-[4/3] object-contain bg-white">
+        <img src="images/team.jpg" alt="Our Team" class="w-full aspect-[4/3] object-cover bg-white">
         <div class="p-4">
-          <h3 class="font-semibold text-dark-green">Our Dedicated Team</h3>
+          <h3 class="font-semibold text-dark-green">Our Team</h3>
         </div>
       </div>
 
-      <!-- Gallery Item 2 -->
+      <!-- Preview 2 -->
       <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
-        <img src="images/show3.jpg" alt="Funeral Service" class="w-full aspect-[4/3] object-contain bg-white">
+        <img src="images/ourwork.jpg" alt="Funeral Work" class="w-full aspect-[4/3] object-cover bg-white">
         <div class="p-4">
-          <h3 class="font-semibold text-dark-green">Dignified Services</h3>
+          <h3 class="font-semibold text-dark-green">Our Work</h3>
         </div>
       </div>
 
-      <!-- Gallery Item 3 -->
+      <!-- Preview 3 -->
       <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
-        <img src="images/show2.jpg" alt="Tombstone" class="w-full aspect-[4/3] object-contain bg-white">
+        <img src="images/cass.jpg" alt="Tombstones" class="w-full aspect-[4/3] object-cover bg-white">
         <div class="p-4">
-          <h3 class="font-semibold text-dark-green">Memorial Work</h3>
+          <h3 class="font-semibold text-dark-green">Caskets & Tombstones</h3>
         </div>
       </div>
 
-      <!-- Gallery Item 4 -->
+      <!-- Preview 4 -->
       <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
-        <img src="images/tomb2.jpg" alt="Tombstone Design" class="w-full aspect-[4/3] object-contain bg-white">
+        <img src="images/deccc.jpg" alt="Decorations" class="w-full aspect-[4/3] object-cover bg-white">
         <div class="p-4">
-          <h3 class="font-semibold text-dark-green">Custom Designs</h3>
+          <h3 class="font-semibold text-dark-green">Decor & Floral</h3>
         </div>
       </div>
+    </div>
 
-      <!-- Gallery Item 5 -->
-      <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
-        <img src="images/show5.jpg" alt="Funeral Flowers" class="w-full aspect-[4/3] object-contain bg-white">
-        <div class="p-4">
-          <h3 class="font-semibold text-dark-green">Floral Arrangements</h3>
-        </div>
-      </div>
-
-      <!-- Gallery Item 6 -->
-      <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
-        <img src="images/show4.jpg" alt="Team Meeting" class="w-full aspect-[4/3] object-contain bg-white">
-        <div class="p-4">
-          <h3 class="font-semibold text-dark-green">Professional Team</h3>
-        </div>
-      </div>
-
-      <!-- Gallery Item 7 -->
-      <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
-        <img src="images/show6.jpg" alt="Service" class="w-full aspect-[4/3] object-contain bg-white">
-        <div class="p-4">
-          <h3 class="font-semibold text-dark-green">Compassionate Care</h3>
-        </div>
-      </div>
-
-      <!-- Gallery Item 8 -->
-      <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
-        <img src="images/tomb3.jpg" alt="Memorial" class="w-full aspect-[4/3] object-contain bg-white">
-        <div class="p-4">
-          <h3 class="font-semibold text-dark-green">Lasting Memorials</h3>
-        </div>
-      </div>
-
+    <!-- Buttons -->
+    <div class="text-center space-x-4">
+      <a href="gallery.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-lg shadow transition">
+        View Full Gallery →
+      </a>
+      <a href="banking.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-lg shadow transition">
+        View Banking Details →
+      </a>
     </div>
   </div>
 </section>
+
 
 
     <!-- Contact Section with bg.jpg -->
@@ -720,31 +863,52 @@
     <!-- Footer -->
 <footer class="bg-gray-900 text-white pt-12 pb-8 relative">
   <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
       
-      <!-- Logo + Description -->
+      <!-- Logo + About -->
       <div>
         <div class="flex items-center mb-4">
-          <img src="images/logo.png" alt="Mighty Kingdom Funerals Logo" class="h-12 mr-3">
+          <img src="images/logo.jpg" alt="Mighty Kingdom Funerals Logo" class="h-12 mr-3">
           <h2 class="text-xl font-bold">Mighty Kingdom Funerals</h2>
         </div>
         <p class="text-gray-400">Dignified services with compassion.</p>
       </div>
 
-      <!-- Quick Links -->
-      <div>
-        <h3 class="font-semibold text-yellow-400 mb-4">Quick Links</h3>
-        <ul class="space-y-2 text-gray-400">
-          <li><a href="#home" class="hover:text-yellow-400 transition">Home</a></li>
-          <li><a href="#services" class="hover:text-yellow-400 transition">Services</a></li>
-          <li><a href="#policies" class="hover:text-yellow-400 transition">Policies</a></li>
-          <li><a href="#gallery" class="hover:text-yellow-400 transition">Gallery</a></li>
-          <li><a href="#contact" class="hover:text-yellow-400 transition">Contact</a></li>
-        </ul>
+      <!-- Quick Links & Services -->
+      <div class="grid grid-cols-2 gap-6">
+        <!-- Quick Links -->
+        <div>
+          <h3 class="font-semibold text-yellow-400 mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="index.html" class="hover:text-yellow-400 transition">Home</a></li>
+            <li><a href="about.html" class="hover:text-yellow-400 transition">About</a></li>
+            <li><a href="plans.html" class="hover:text-yellow-400 transition">Policies</a></li>
+            <li><a href="gallery.html" class="hover:text-yellow-400 transition">Gallery</a></li>
+            <li><a href="payments.html" class="hover:text-yellow-400 transition">Banking Details</a></li>
+            <li><a href="contact.html" class="hover:text-yellow-400 transition">Contact</a></li>
+            <li><a href="caskets.html" class="hover:text-yellow-400 transition">Caskets</a></li>
+            <li><a href="terms.html" class="hover:text-yellow-400 transition">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h3 class="font-semibold text-yellow-400 mb-4">Our Services</h3>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li>Funeral Policies</li>
+            <li>Burial Services</li>
+            <li>Repatriation</li>
+            <li>Caskets & Tombstones</li>
+            <li>Grave Decoration</li>
+            <li>Transportation</li>
+            <li>Funeral Programs</li>
+            <li>Grocery Packages</li>
+          </ul>
+        </div>
       </div>
 
-      <!-- Social Links -->
-      <div>
+      <!-- Social Media -->
+      <div class="md:ml-auto mt-6 md:mt-0">
         <h3 class="font-semibold text-yellow-400 mb-4">Follow Us</h3>
         <div class="flex space-x-6 text-2xl">
           <a href="https://www.facebook.com/profile.php?id=100087009226034#" class="text-gray-400 hover:text-yellow-400 transition">
@@ -764,7 +928,9 @@
     </div>
 
     <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400 text-sm">
-      <p>&copy; 2023 Mighty Kingdom Funerals. All rights reserved.</p>
+      <p>&copy; 2023 Mighty Kingdom Funerals. All rights reserved. | By 
+        <a href="https://www.valoyitech.co.za/" target="_blank" class="text-yellow-400 hover:underline">ValoyItech</a>
+      </p>
     </div>
   </div>
 
@@ -774,6 +940,7 @@
     <span class="font-medium">How can we help?</span>
   </a>
 </footer>
+
 
 
 
