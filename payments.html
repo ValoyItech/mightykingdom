@@ -34,7 +34,7 @@
   <<header class="fixed top-0 left-0 w-full z-50 gradient-bg text-white shadow-lg">
   <div class="container mx-auto px-4 py-3 flex justify-between items-center">
     <div class="flex items-center">
-      <img src="images/logo.png" alt="Logo" class="h-12 mr-3">
+      <img src="images/logo.jpg" alt="Logo" class="h-12 mr-3">
       <h1 class="text-xl font-bold">Mighty Kingdom Funerals</h1>
     </div>
     <nav class="hidden md:block">
@@ -119,27 +119,46 @@
     </div>
   </section>
 
-  <!-- Upload Proof of Payment -->
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <h3 class="text-3xl font-bold text-center mb-10 text-dark-green">Submit Proof of Payment</h3>
-      <form action="#" method="POST" enctype="multipart/form-data" class="max-w-xl mx-auto space-y-4">
-        <div>
-          <label class="block font-medium text-gray-700">Full Name</label>
-          <input type="text" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-yellow-500 focus:border-yellow-500">
-        </div>
-        <div>
-          <label class="block font-medium text-gray-700">Phone Number</label>
-          <input type="tel" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-yellow-500 focus:border-yellow-500">
-        </div>
-        <div>
-          <label class="block font-medium text-gray-700">Upload Proof of Payment (PDF or Image)</label>
-          <input type="file" name="proof" accept=".pdf,.jpg,.jpeg,.png" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-yellow-500 focus:border-yellow-500">
-        </div>
-        <button type="submit" class="bg-yellow-500 text-dark-green font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition">Submit</button>
-      </form>
-    </div>
-  </section>
+  <!-- Upload Proof of Payment (WhatsApp Enabled) -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-10 text-dark-green">Submit Proof of Payment</h3>
+    <form id="paymentForm" class="max-w-xl mx-auto space-y-4" onsubmit="sendPaymentProof(); return false;">
+      <div>
+        <label class="block font-medium text-gray-700">Full Name</label>
+        <input type="text" id="payerName" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-yellow-500 focus:border-yellow-500">
+      </div>
+      <div>
+        <label class="block font-medium text-gray-700">Phone Number</label>
+        <input type="tel" id="payerPhone" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-yellow-500 focus:border-yellow-500">
+      </div>
+      <div>
+        <label class="block font-medium text-gray-700">Upload Proof of Payment (PDF or Image)</label>
+        <input type="file" accept=".pdf,.jpg,.jpeg,.png" required class="w-full px-4 py-2 border border-gray-300 rounded-lg cursor-not-allowed bg-gray-100 text-gray-500" disabled>
+        <p class="text-sm text-gray-600 mt-1 italic">File upload must be done manually via WhatsApp after submitting.</p>
+      </div>
+      <button type="submit" class="bg-yellow-500 text-dark-green font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition">
+        Send to WhatsApp
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- WhatsApp Script -->
+<script>
+  function sendPaymentProof() {
+    const name = document.getElementById("payerName").value.trim();
+    const phone = document.getElementById("payerPhone").value.trim();
+
+    const message = `*Proof of Payment Submission*\n\n*Name:* ${name}\n*Phone:* ${phone}\n\nPlease find my proof of payment attached.`;
+
+    const whatsappNumber = "27714319306"; // format: countrycode + number
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappLink, '_blank');
+  }
+</script>
+
 
   <!-- FAQs -->
   <section class="py-16 bg-gray-100">
@@ -260,12 +279,7 @@
     <span class="font-medium">How can we help?</span>
   </a>
 </footer>
-
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/27714319306" target="_blank" class="fixed bottom-5 right-5 z-50 flex items-center bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">
-    <i class="fab fa-whatsapp text-2xl mr-2"></i>
-    <span class="font-medium">Send Proof</span>
-  </a>
+j
 
   <!-- Scripts -->
   <script>
